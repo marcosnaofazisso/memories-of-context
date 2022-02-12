@@ -17,9 +17,17 @@ function App() {
       <DistribuoPraTodoMundo>
         <Filme />
         <HarryPotter />
-        <hr />
         <SenhorDosAneis />
       </DistribuoPraTodoMundo>
+
+      <br />
+      <br />
+      <br />
+      <hr />
+      <br />
+      <br />
+      <br />
+
 
       {/* TEMA */}
       <ThemeProvider>
