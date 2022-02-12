@@ -1,18 +1,21 @@
 import React from 'react'
-import Memories from './components/Memories/Memories'
-import Remembers from './components/Rememberes/Remembers'
-import ContextProvider from './components/Context/ContextProvider'
+import HarryPotter from './components/HarryPotter/HarryPotter'
+import SenhorDosAneis from './components/SenhorDosAneis/SenhorDosAneis'
+import DistribuoPraTodoMundo from './components/Context/DistribuoPraTodoMundo'
+import Filme from './components/Filme/Filme'
 
 function App() {
   return (
-    <ContextProvider>
+    <DistribuoPraTodoMundo>
       <div>
-        <Memories />
-        <hr />
-        <Remembers />
-
+        <Filme />
       </div>
-    </ContextProvider>
+      <div>
+        <HarryPotter />
+        <hr />
+        <SenhorDosAneis />
+      </div>
+    </DistribuoPraTodoMundo>
   )
 }
 
