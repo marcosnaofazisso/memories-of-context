@@ -1,20 +1,17 @@
 import React from 'react'
 import { useDistribuicao } from "../Context/DistribuoPraTodoMundo"
 
-export default function HarryPotter() {
+export default function SenhorDosAneis() {
 
     const { filme, setFilme } = useDistribuicao();
 
     return (
         <div>
-            <h1>Harry Potter:</h1>
             <span>
-                {filme}
+                <b>O Senhor dos Anéis: </b>
             </span>
             <br />
-            <button onClick={() => setFilme("É leviOOOsa e não leviosááá....")}>Gosto de Harry Potter!</button>
+            <button onClick={() => setFilme("'Eu estava lá, Gandalf... 2000 anos quando a humanidade fracassou...'")}>Prefiro Senhor dos Anéis!</button>
         </div>
     )
 }
-
-
