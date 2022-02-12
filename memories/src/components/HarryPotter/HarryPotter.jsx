@@ -11,7 +11,7 @@ export default function HarryPotter() {
                 <b>Harry Potter:</b>
             </span>
             <br />
-            <button onClick={() => setFilme("'É leviOOOsa e não leviosááá....'")}>Gosto de Harry Potter!</button>
+            <button onClick={() => setFilme(filme == "" ? "'É leviOOOsa e não leviosááá....'" : "")}>Gosto de Harry Potter!</button>
         </div>
     )
 }

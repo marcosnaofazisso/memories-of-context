@@ -11,7 +11,7 @@ export default function SenhorDosAneis() {
                 <b>O Senhor dos Anéis: </b>
             </span>
             <br />
-            <button onClick={() => setFilme("'Eu estava lá, Gandalf... 2000 anos quando a humanidade fracassou...'")}>Prefiro Senhor dos Anéis!</button>
+            <button onClick={() => setFilme(filme == "" ? "'Eu estava lá, Gandalf... 2000 anos quando a humanidade fracassou...'" : "")}>Prefiro Senhor dos Anéis!</button>
         </div>
     )
 }

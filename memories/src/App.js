@@ -1,21 +1,32 @@
 import React from 'react'
+
+//  CONTEXTO SOBRE FILMES
 import HarryPotter from './components/HarryPotter/HarryPotter'
 import SenhorDosAneis from './components/SenhorDosAneis/SenhorDosAneis'
 import DistribuoPraTodoMundo from './components/Context/DistribuoPraTodoMundo'
 import Filme from './components/Filme/Filme'
 
+//  CONTEXTO SOBRE TEMA
+import ThemeProvider from './components/Context/Theme'
+import Tema from './components/Tema/Tema'
+
 function App() {
   return (
-    <DistribuoPraTodoMundo>
-      <div>
+    <div>
+      {/* FILMES */}
+      <DistribuoPraTodoMundo>
         <Filme />
-      </div>
-      <div>
         <HarryPotter />
         <hr />
         <SenhorDosAneis />
-      </div>
-    </DistribuoPraTodoMundo>
+      </DistribuoPraTodoMundo>
+
+      {/* TEMA */}
+      <ThemeProvider>
+        <Tema />
+      </ThemeProvider>
+
+    </div>
   )
 }
 
